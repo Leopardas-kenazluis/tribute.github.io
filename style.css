@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #552583;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+h1, h2, h3 {
+    margin: 20px 0;
+    color:#FDB927;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ebe012;
+    padding: 20px 0;
+    position: flex;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .Logo {
+    height: 60px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header ul li a:hover {
+    color: #f4b400;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+
+section.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.profile-image {
+    width: 100%; /* Adjust this percentage as needed for your layout */
+    max-width: 1000px; /* Sets a maximum width for larger screens */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    border-radius: 150%; /* Softer corners */
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #1e2a38;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    color: #f4b400;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+p {
+    color: white;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.description p {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+/* Career Section */
+ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+ul li strong {
+    color: #f4b400;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e2a38;
+    padding: 30px 0;
+    color: white;
+}
+
+.mainfooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialicons a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footernav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footernav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footernav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footernav ul li a:hover {
+    color: #f4b400;
+}
+
+.footerbottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerbottom p {
+    margin: 10px 0;
+}
+
+.footerbottom .designer {
+    color: #f4b400;
+}
+
+.footerbottom a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.footerbottom a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .mainfooter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
